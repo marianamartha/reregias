@@ -202,7 +202,7 @@
   /* -- MOBILE -- */
   @media (min-width: 320px) and (max-width: 576px) {
   /ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE/
-   .contenedormenu{ 
+  .contenedormenu{ 
       display: grid;
     grid-template-columns:none;
       align-items:center;
