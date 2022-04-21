@@ -1,0 +1,214 @@
+@import "media";
+
+*{margin:0;
+    padding:0;}
+    
+    body{
+        background-color:white;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+        font-size: 22px;
+        font-family: sans-serif;
+        text-align: center; 
+    }
+
+    .contenedormenu{text-align: center; 
+        font-family: 'Roboto', sans-serif;
+        background-color:#ee751b;
+        position:relative;
+        padding: 30px;
+        color:white;
+        /* display: inline-block; */
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: space-around;
+        align-items: center;
+    
+    img {
+        width: 100%;
+        Height: auto;
+        display: flex;
+        align-items: center;} } 
+        
+    /* .logo{width: 70px; height: 70px;} */
+        
+    .menu{  display: flex;
+            list-style: none;
+            gap:2rem;
+            justify-content: space-around;
+            }
+    
+    ul { list-style: none;
+    
+    li{
+        color: #ee751b;
+            }
+        }
+            
+    .presentacion {  padding-top: 20px;
+        padding-bottom: 20 px;
+    }
+    
+    h1{text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color:#ee751b;
+        }
+        
+        .display{
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+                }
+    
+    h2{text-align: center;
+            font-size: 22px;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            color:#ee751b;
+        }
+    
+    h3{
+            text-align: center;
+                font-size: 16px;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            color:#ee751b;
+                }
+    
+            .intro{
+            background-color: #ee751b;
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            }
+            
+    
+    #emprendimiento{
+            overflow: hidden;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: bisque;
+            text-align: center; 
+            font-family: 'Roboto', sans-serif;
+            color:white;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            align-items: center;
+
+            }
+    
+    .emprendimientos{width: 80%;}
+            
+    .cajitas {display:inline-block;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            border: solid 2px #ee751b;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            color:#ee751b;
+            justify-content: space-around;
+            align-items: center;
+            gap:2rem;
+                    }
+                    
+    
+            p{ padding-left: 40px;
+            padding-right: 40px;
+            color: #ee751b;
+            }
+            
+            .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited 
+                {color: white;
+                background-color: #ee751b;
+                border-color: bisque;
+                width: 50%;
+                }
+                
+                #tel{
+                color: white;
+                background-color: #ee751b;
+                border-color: bisque;
+                width: 50%;
+                    }
+                    
+                    
+                .carousel{width: 100%;
+                align-items: center;
+            
+                background-color: #ee751b;}
+                    
+                    
+                    
+    label {
+        line-height: 1.4;
+        font-size: 16px;
+        
+            }
+            
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+        }
+        
+    a:link {
+        color: white;
+        }
+        
+    a:visited {
+        color: wheat;
+            }
+            
+    a:focus {
+        border-bottom: 1px solid;
+        background: wheat;
+        }
+        
+    a:hover {
+        border-bottom: 1px solid;
+        background: white;
+        }
+        
+    a:active {
+        background: #ee751b;
+        color: wheat;
+        }
+        
+        .ver {
+        font-family: 'Montserrat', sans-serif;
+        background-color:#ee751b;
+        }
+        
+        
+        .comunidad{ 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+        
+        /* form{position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: block;
+        box-sizing: inherit;} */
+    
+    footer{
+        /* background-image: url(../multimedia/fondo-regias.jpg); */
+        color:white;  
+        font-family: 'Roboto', sans-serif;
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        background-color: #ee751b;
+        
+        p {
+                color: white;
+        }
+    }
+    
+    
