@@ -40,13 +40,35 @@
   p {
     font-size: 16px; } }
 
+/* Variables */
+.ver-visited, .ver {
+  font-family: 'Montserrat', sans-serif; }
+
+.ver-visited {
+  background-color: bisque; }
+
+.ver {
+  background-color: #ee751b; }
+
+.btn--instagram {
+  background-color: #E1306C; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--tiktok {
+  background-color: #25F4EE; }
+
+.instagram {
+  background-color: #E1306C; }
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: normal 24px/1.5 "Roboto", sans-serif;
   margin: 0 auto;
   font-size: 22px;
   font-family: sans-serif;
@@ -65,8 +87,8 @@ body {
   justify-content: space-around;
   align-items: center; }
   .contenedormenu img {
+    height: auto;
     width: 100%;
-    Height: auto;
     display: flex;
     align-items: center; }
 
@@ -141,8 +163,8 @@ h3 {
   border: solid 2px #ee751b;
   font-family: 'Roboto', sans-serif;
   background-color: white;
-  width: 300px;
   height: 300px;
+  width: 300px;
   color: #ee751b;
   justify-content: space-around;
   align-items: center;

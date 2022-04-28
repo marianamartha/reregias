@@ -1,11 +1,66 @@
 @import "media";
 
+/* Variables */
+$title-font: normal 24px/1.5 'Roboto', sans-serif;
+$reregias: #ee751b;
+// $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+$colors: (
+ reregias: #ee751b,
+ blanco:  white,
+ send-mail: bisque
+);
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+
+$bg-visited: bisque;
+$bg-notvisited: #ee751b;
+
+%botonVerMas { font-family: 'Montserrat', sans-serif; }
+
+.ver-visited {
+@extend %botonVerMas;
+
+background-color:$bg-visited;
+}
+.ver {
+    @extend %botonVerMas;
+    
+    background-color:$bg-notvisited;
+    }
+    
+
+    $colors: (
+        instagram: #E1306C,
+        facebook:  #3a5795,
+        tiktok: #25F4EE
+        );
+
+        @each $name-color, $bgcolor in $colors {
+            .btn--#{$name-color} {
+                background-color: $bgcolor;
+            }
+        }
+
+        .instagram {
+            background-color: map-get($colors, instagram)
+            }
+        
+
+        
+            
+
+
 *{margin:0;
     padding:0;}
     
     body{
         background-color:white;
-        font-family: 'Roboto', sans-serif;
+        font-family: $title-font;
         margin: 0 auto;
         font-size: 22px;
         font-family: sans-serif;
@@ -14,7 +69,7 @@
 
     .contenedormenu{text-align: center; 
         font-family: 'Roboto', sans-serif;
-        background-color:#ee751b;
+        background-color:$reregias;
         position:relative;
         padding: 30px;
         color:white;
@@ -25,8 +80,8 @@
         align-items: center;
     
     img {
-        width: 100%;
-        Height: auto;
+        @include sizes(100%, auto);
+        
         display: flex;
         align-items: center;} } 
         
@@ -41,7 +96,7 @@
     ul { list-style: none;
     
     li{
-        color: #ee751b;
+        color: $reregias;
             }
         }
             
@@ -52,7 +107,7 @@
     h1{text-align: center;
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
-        color:#ee751b;
+        color: $reregias;
         }
         
         .display{
@@ -66,19 +121,19 @@
             font-size: 22px;
             padding: 10px;
             font-family: 'Roboto', sans-serif;
-            color:#ee751b;
+            color:$reregias;
         }
     
     h3{
             text-align: center;
-                font-size: 16px;
+            font-size: 16px;
             padding: 10px;
             font-family: 'Roboto', sans-serif;
-            color:#ee751b;
+            color:$reregias;
                 }
     
             .intro{
-            background-color: #ee751b;
+            background-color: $reregias;
             text-decoration: none;
             color: white;
             padding: 30px;
@@ -105,12 +160,11 @@
     .cajitas {display:inline-block;
             margin: 10px 10px;
             padding: 10px 10px;
-            border: solid 2px #ee751b;
+            border: solid 2px $reregias;
             font-family: 'Roboto', sans-serif;
             background-color: white;
-            width: 300px;
-            height: 300px;
-            color:#ee751b;
+            @include sizes(300px, 300px);
+            color:$reregias;
             justify-content: space-around;
             align-items: center;
             gap:2rem;
@@ -119,19 +173,19 @@
     
             p{ padding-left: 40px;
             padding-right: 40px;
-            color: #ee751b;
+            color: $reregias;
             }
             
             .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited 
                 {color: white;
-                background-color: #ee751b;
+                background-color: $reregias;
                 border-color: bisque;
                 width: 50%;
                 }
                 
                 #tel{
                 color: white;
-                background-color: #ee751b;
+                background-color: $reregias;
                 border-color: bisque;
                 width: 50%;
                     }
@@ -139,8 +193,7 @@
                     
                 .carousel{width: 100%;
                 align-items: center;
-            
-                background-color: #ee751b;}
+                background-color: $reregias;}
                     
                     
                     
@@ -175,13 +228,13 @@
         }
         
     a:active {
-        background: #ee751b;
+        background: $reregias;
         color: wheat;
         }
         
         .ver {
         font-family: 'Montserrat', sans-serif;
-        background-color:#ee751b;
+        background-color:$reregias;
         }
         
         
@@ -204,7 +257,7 @@
         font-family: 'Roboto', sans-serif;
         padding-top: 20px;
         padding-bottom: 20px; 
-        background-color: #ee751b;
+        background-color: $reregias;
         
         p {
                 color: white;
