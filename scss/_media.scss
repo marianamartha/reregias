@@ -1,3 +1,7 @@
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
 /* -- TABLET -- */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .contenedormenu{ 
@@ -38,7 +42,9 @@ padding: 10px;}
     #emprendimiento {
     flex-direction: column;
     } 
-
+// .new{display: grid;
+//     grid-template-columns:none;
+//     align-items:center;}
 p{font-size: 16px;}
 
 }
