@@ -3,12 +3,11 @@
 /* Variables */
 $title-font: normal 24px/1.5 'Roboto', sans-serif;
 $reregias: #ee751b;
-// $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 $colors: (
- reregias: #ee751b,
- blanco:  white,
- send-mail: bisque
+reregias: #ee751b,
+blanco:  white,
+send-mail: bisque
 );
 
 @mixin sizes($width, $height) {
@@ -16,24 +15,22 @@ $colors: (
     width: $width;
 }
 
-
 $bg-visited: bisque;
 $bg-notvisited: #ee751b;
 
 %botonVerMas { font-family: 'Montserrat', sans-serif; }
 
+
 .ver-visited {
 @extend %botonVerMas;
-
 background-color:$bg-visited;
 }
+
 .ver {
     @extend %botonVerMas;
-    
     background-color:$bg-notvisited;
     }
     
-
     $colors: (
         instagram: #E1306C,
         facebook:  #3a5795,
@@ -52,42 +49,58 @@ background-color:$bg-visited;
         
 
         
-*{margin:0;
-    padding:0;}
+*   {   margin:0;
+        padding:0;
+    }
+
+        html {
+        min-height: 100%;
+        margin: 0%;        
+        position: relative;
+        }
     
+    .container-fluid { padding: 0; 
+        margin-left: 20px;
+        margin-right: 20px;
+    
+        }
+
+    body, html { overflow-x: hidden; }
     body{
         background-color:white;
         font-family: $title-font;
-        margin: 0 auto;
+        margin: 0;
         font-size: 22px;
         font-family: sans-serif;
         text-align: center; 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
-    .contenedormenu{text-align: center; 
+    .contenedormenu {
+        text-align: center; 
         font-family: 'Roboto', sans-serif;
         background-color:$reregias;
-        position:relative;
         padding: 30px;
         color:white;
-        /* display: inline-block; */
-        display: grid;
-        grid-template-columns: 30% 70%;
+        display: flex;
+        
         justify-content: space-around;
         align-items: center;
     
     img {
-        @include sizes(100%, auto);
-        
+        @include sizes(150px, auto);
         display: flex;
-        align-items: center;} } 
+        align-items: center;}
+    } 
         
-    /* .logo{width: 70px; height: 70px;} */
         
     .menu{  display: flex;
             list-style: none;
             gap:2rem;
             justify-content: space-around;
+            
             }
     
     ul { list-style: none;
@@ -199,6 +212,7 @@ background-color:$bg-visited;
                     
                 .carousel{width: 100%;
                 align-items: center;
+                text-align: center;
                 background-color: $reregias;}
                     
                     
@@ -226,11 +240,7 @@ background-color:$bg-visited;
     a:focus {
         border-bottom: 1px solid;
         background: wheat;
-        }
-        
-    a:hover {
-        border-bottom: 1px solid;
-        background: white;
+        color: $reregias;
         }
         
     a:active {
@@ -256,22 +266,21 @@ background-color:$bg-visited;
             gap:2rem;
             justify-content:center;
         }
-            // text-decoration: none;
-            // color: $reregias;
-        //     background-color: #ee751b;
-        // }
+        
     
     footer{
-        /* background-image: url(../multimedia/fondo-regias.jpg); */
         color:white;  
         font-family: 'Roboto', sans-serif;
         padding-top: 20px;
         padding-bottom: 20px; 
         background-color: $reregias;
-        
+        margin-top: auto;
+        overflow: -moz-hidden-unscrollable;
+        margin-bottom: 0%;
         p {
                 color: white;
         }
     }
-    
-    
+div ul li a{color: white;
+    text-decoration: none;
+text-align: left;}

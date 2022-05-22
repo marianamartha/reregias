@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /* -- TABLET -- */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .contenedormenu {
     display: grid;
-    flex-direction: column;
+    grid-template-columns: 50% 50%;
     align-items: center; }
   .contenedormenu img {
     width: 100%;
@@ -17,15 +16,21 @@
     grid-template-columns: 1fr 1fr; }
   #emprendimiento {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+  main {
+    display: grid;
+    flex-direction: column;
+    align-items: center; } }
 
 /* -- MOBILE -- */
-@media screen and (min-width: 320px) and (max-width: 576px) {
-  /* /ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE/ */
+@media (min-width: 320px) and (max-width: 576px) {
+  html {
+    margin: 20px; }
+  main {
+    padding: 1rem; }
   .contenedormenu {
     display: grid;
-    grid-template-columns: none;
-    align-items: center; }
+    grid-template-columns: 60% 40%; }
   .contenedormenu img {
     width: 100%;
     Height: auto;
@@ -38,7 +43,13 @@
   #emprendimiento {
     flex-direction: column; }
   p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  main {
+    display: grid;
+    flex-direction: column;
+    align-items: center; }
+  .map {
+    size: 5%; } }
 
 /* Variables */
 .ver-visited, .ver {
@@ -66,33 +77,45 @@
   margin: 0;
   padding: 0; }
 
+html {
+  min-height: 100%;
+  margin: 0%;
+  position: relative; }
+
+.container-fluid {
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+body, html {
+  overflow-x: hidden; }
+
 body {
   background-color: white;
   font-family: normal 24px/1.5 "Roboto", sans-serif;
-  margin: 0 auto;
+  margin: 0;
   font-size: 22px;
   font-family: sans-serif;
-  text-align: center; }
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 .contenedormenu {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   background-color: #ee751b;
-  position: relative;
   padding: 30px;
   color: white;
-  /* display: inline-block; */
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
   justify-content: space-around;
   align-items: center; }
   .contenedormenu img {
     height: auto;
-    width: 100%;
+    width: 150px;
     display: flex;
     align-items: center; }
 
-/* .logo{width: 70px; height: 70px;} */
 .menu {
   display: flex;
   list-style: none;
@@ -202,6 +225,7 @@ p {
 .carousel {
   width: 100%;
   align-items: center;
+  text-align: center;
   background-color: #ee751b; }
 
 label {
@@ -221,11 +245,8 @@ a:visited {
 
 a:focus {
   border-bottom: 1px solid;
-  background: wheat; }
-
-a:hover {
-  border-bottom: 1px solid;
-  background: white; }
+  background: wheat;
+  color: #ee751b; }
 
 a:active {
   background: #ee751b;
@@ -246,11 +267,18 @@ a:active {
   justify-content: center; }
 
 footer {
-  /* background-image: url(../multimedia/fondo-regias.jpg); */
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #ee751b; }
+  background-color: #ee751b;
+  margin-top: auto;
+  overflow: -moz-hidden-unscrollable;
+  margin-bottom: 0%; }
   footer p {
     color: white; }
+
+div ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: left; }
