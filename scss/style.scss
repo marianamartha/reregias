@@ -83,7 +83,7 @@ background-color:$bg-visited;
         text-align: center; 
         font-family: 'Roboto', sans-serif;
         background-color:$reregias;
-        padding: 10px;
+        padding: 20px;
         color:white;
         display: flex;
         
@@ -91,7 +91,7 @@ background-color:$bg-visited;
         align-items: center;
     
     img {
-        @include sizes(130px, 130px);
+        @include sizes(130px, auto);
         display: flex;
         align-items: center;}
     } 

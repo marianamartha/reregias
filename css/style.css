@@ -105,13 +105,13 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   background-color: #ee751b;
-  padding: 10px;
+  padding: 20px;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center; }
   .contenedormenu img {
-    height: 130px;
+    height: auto;
     width: 130px;
     display: flex;
     align-items: center; }
