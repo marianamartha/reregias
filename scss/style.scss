@@ -60,9 +60,10 @@ background-color:$bg-visited;
         }
     
     .container-fluid { padding: 0; 
-        margin-left: 20px;
-        margin-right: 20px;
-    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
         }
 
     body, html { overflow-x: hidden; }
@@ -82,7 +83,7 @@ background-color:$bg-visited;
         text-align: center; 
         font-family: 'Roboto', sans-serif;
         background-color:$reregias;
-        padding: 30px;
+        padding: 10px;
         color:white;
         display: flex;
         
@@ -90,7 +91,7 @@ background-color:$bg-visited;
         align-items: center;
     
     img {
-        @include sizes(100px, 100px);
+        @include sizes(130px, 130px);
         display: flex;
         align-items: center;}
     } 
@@ -129,7 +130,8 @@ background-color:$bg-visited;
     
     h2{text-align: center;
             font-size: 32px;
-            padding: 10px;
+            // margin-left: 100px;
+            // margin-right: 100px;
             font-family: 'Montserrat', sans-serif;
             color:$reregias;
         }
